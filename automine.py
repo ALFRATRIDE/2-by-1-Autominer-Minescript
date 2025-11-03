@@ -122,7 +122,7 @@ for _ in range(times):
     x, y, z = minescript.player().position
     # Log
     timestamp = time.strftime("[%Y-%m-%d %H:%M:%S]")
-    with open(r'D:/! Programs/CurseForge/CURSEFORGE/minecraft/Instances/V/minescript/blocks.log', "a") as logFile:
+    with open(r'./blocks.log', "a") as logFile:
         logFile.write(f"{timestamp} Position: {math.floor(x), math.floor(y), math.floor(z)} \n")
         logFile.write(f"{timestamp} f.Side Blocks: {sideBlock1}, {sideBlock2}, {sideBlock3}, {sideBlock4} \n")
         logFile.write(f"{timestamp} b.Side Blocks: {bSideBlock1}, {bSideBlock2}, {bSideBlock3}, {bSideBlock4} \n")
@@ -177,4 +177,5 @@ for _ in range(times):
 
     
 minescript.player_press_attack(False)
+
 minescript.player_press_forward(False)
